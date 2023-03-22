@@ -1,7 +1,7 @@
 class ConversionsController < ApplicationController
   def convert
     query = params[:q]
-    result = UnitConverter.convert(query)
+    result = UnitConverterService.convert(query)
 
     if result
       render plain: result, content_type: "text/plain"

@@ -1,6 +1,6 @@
 require_relative "../../../config/unit_mapping.rb"
 
-class UnitConverter
+class UnitConverterService
   def self.convert(query)
     source_unit, target_unit = parse_query(query)
 
