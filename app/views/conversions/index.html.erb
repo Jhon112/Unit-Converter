@@ -1,0 +1,15 @@
+<h1>Unit Converter</h1>
+<p>Enter a query in the format "1 kg in lb":</p>
+
+<%= form_tag convert_path, method: :get do %>
+  <%= label_tag :query %>
+  <%= text_field_tag :q %>
+  <%= submit_tag "Convert" %>
+<% end %>
+
+<% if @converted_value %>
+  <p>Converted value:</p>
+  <p><%= @converted_value %></p>
+<% elsif @error %>
+  <p><%= @error %></p>
+<% end %>
