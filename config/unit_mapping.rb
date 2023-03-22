@@ -1,15 +1,20 @@
+require_relative "../app/services/unit_converter/units/mass/kilogram"
+require_relative "../app/services/unit_converter/units/mass/pound"
+require_relative "../app/services/unit_converter/units/length/meter"
+require_relative "../app/services/unit_converter/units/length/foot"
+
 UNIT_MAPPING = {
-  "kg" => Mass::Kilogram,
-  "kilogram" => Mass::Kilogram,
-  "kilograms" => Mass::Kilogram,
-  "lb" => Mass::Pound,
-  "pound" => Mass::Pound,
-  "pounds" => Mass::Pound,
-  "m" => Length::Meter,
-  "meter" => Length::Meter,
-  "meters" => Length::Meter,
-  "ft" => Length::Foot,
-  "foot" => Length::Foot,
-  "feet" => Length::Foot,
-  "feets" => Length::Foot,
+  "kg" => Kilogram,
+  "kilogram" => Kilogram,
+  "kilograms" => Kilogram,
+  "lb" => Pound,
+  "pound" => Pound,
+  "pounds" => Pound,
+  "m" => Meter,
+  "meter" => Meter,
+  "meters" => Meter,
+  "ft" => Foot,
+  "foot" => Foot,
+  "feet" => Foot,
+  "feets" => Foot,
 }.freeze
